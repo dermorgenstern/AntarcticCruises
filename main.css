@@ -13,6 +13,10 @@ body {
   width: 1366px;
 }
 
+.hidden {
+  display: none;
+}
+
 .header {
   padding: 35px 100px;
   min-height: 650px;
@@ -67,6 +71,7 @@ body {
   font-size: 54px;
   font-weight: 700;
   line-height: 66px;
+  color: #F9FBFD;
 }
 
 .header p {
@@ -75,4 +80,39 @@ body {
   margin-left: 100px;
   font-size: 20px;
   line-height: 24px;
+  color: #F9FBFD;
+}
+
+.about {
+  position: relative;
+}
+
+.about-description {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.about-description h2 {
+  margin-top: 190px;
+  margin-left: 100px;
+  margin-bottom: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #011C40;
+}
+
+.about-description p {
+  margin-top: 0px;
+  margin-left: 100px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #011C40;
+}
+
+.about img {
+  display: inline-block;
+  position: absolute;
+  right: 0;
 }
