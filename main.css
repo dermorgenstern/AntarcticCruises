@@ -1,14 +1,78 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Montserrat, "Arial", sans-serif;
-    color: #011C40;
-    background-color: white;
-  }
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Montserrat, "Arial", sans-serif;
+  color: #011C40;
+  background-color: white;
+}
 
 
 .container {
-    min-width: 1366px;
+  width: 1366px;
+}
+
+.header {
+  padding: 35px 100px;
+  min-height: 650px;
+  background-image: url("./img/Header.png");
+  background-repeat: no-repeat;
+}
+
+.header-top {
+  position: relative;
+}
+
+.header-logo {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.header-nav {
+  display: inline-block;
+  position: absolute;
+  vertical-align: center;
+  right: 0px;
+  margin-left: auto;
+}
+
+.header-nav ul {
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.header-nav li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 16px;
+}
+
+.header-nav li:last-child {
+  margin-right: 3px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #F9FBFD;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header h2 {
+  display: inline-block;
+  margin-top: 190px;
+  margin-left: 100px;
+  margin-bottom: 12px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 66px;
+}
+
+.header p {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 100px;
+  font-size: 20px;
+  line-height: 24px;
 }
