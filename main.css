@@ -5,55 +5,67 @@ body {
   line-height: 24px;
   font-family: Montserrat, "Arial", sans-serif;
   color: #011C40;
-  background-color: white;
-}
-
-
-.container {
-  width: 1366px;
+  background-color: #E5E5E5;
 }
 
 .hidden {
   display: none;
 }
 
+.container {
+  width: 1366px;
+}
+
+
+
 .header {
-  padding: 35px 100px;
-  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("./img/Header.png");
   background-repeat: no-repeat;
 }
 
+.header-wrapper {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .header-top {
-  position: relative;
+  width: 1167px;
+  display: flex;
+  margin-top: 35px;
 }
 
 .header-logo {
   display: inline-block;
+  vertical-align: middle;
   margin-left: 3px;
+  margin-right: auto;
+  line-height: 0px;
 }
 
 .header-nav {
-  display: inline-block;
-  position: absolute;
-  vertical-align: center;
-  right: 0px;
-  margin-left: auto;
+  display: flex;
 }
 
 .header-nav ul {
+  display: flex;
+  width: 615px;
   margin: 0px;
-  margin-top: 8px;
+  margin-top: 2px;
 }
 
 .header-nav li {
-  display: inline-block;
   list-style: none;
-  margin: 0px 16px;
+  padding: 0;
+  margin: auto;
 }
 
 .header-nav li:last-child {
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 .header-nav a {
@@ -61,13 +73,13 @@ body {
   color: #F9FBFD;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
 }
 
 .header h2 {
-  display: inline-block;
-  margin-top: 190px;
-  margin-left: 100px;
-  margin-bottom: 12px;
+  margin: 0;
+  margin-top: 197px;
+  width: 970px;
   font-size: 54px;
   font-weight: 700;
   line-height: 66px;
@@ -75,9 +87,8 @@ body {
 }
 
 .header p {
-  display: inline-block;
-  margin-top: 0px;
-  margin-left: 100px;
+  width: 970px;
+  margin: 12px;
   font-size: 20px;
   line-height: 24px;
   color: #F9FBFD;
@@ -85,14 +96,16 @@ body {
 
 .about {
   position: relative;
-  padding: 0px;
-  padding-top: 120px;
+  min-height: 301px;
+  margin-top: 50px;
+  margin-bottom: 120px;
+
 }
 
 .about-description {
   display: inline-block;
   position: absolute;
-  left: 0;
+  left: 0px;
   max-width: 630px;
   margin-top: 55px;
 }
@@ -122,4 +135,26 @@ body {
   right: 0;
   margin-top: 0px;
   margin-right: 103px;
+}
+
+.advantages {
+  min-height: 562px;
+  padding-top: 10px;
+  background-image: url(./img/Advantages.png);
+}
+
+.advantages h2 {
+
+  margin-top: 100px;
+  text-align: center;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+
+  color: #011C40;
+
+
 }
