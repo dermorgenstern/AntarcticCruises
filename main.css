@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -142,7 +141,7 @@ body {
   /* background-clip: border-box; */
 }
 
-.advantages > h2 {
+.advantages>h2 {
   display: inline-block;
   width: 1100px;
   height: 80px;
@@ -170,7 +169,7 @@ body {
   background-clip: border-box;
 }
 
-.advantage-item > h3 {
+.advantage-item>h3 {
   margin: 0;
   margin-top: 20px;
   font-family: Montserrat;
@@ -181,7 +180,7 @@ body {
   color: #011C40;
 }
 
-.advantage-item > p {
+.advantage-item>p {
   display: inline-block;
   margin: 0;
   margin-top: 8px;
@@ -275,7 +274,8 @@ body {
   margin-bottom: 0px;
 }
 
-.item-info dl, dd {
+.item-info dl,
+dd {
   font-size: 14px;
   line-height: 140%;
   font-family: Montserrat;
@@ -289,10 +289,11 @@ body {
 }
 
 .item-info dd {
-  margin-top: 1px;  
+  margin-top: 1px;
   color: #D8D8D9;
   font-weight: 300;
 }
+
 .item-info input {
   background-color: #F9FBFD;
   font-family: Montserrat;
@@ -356,4 +357,146 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+}
+
+.earlyBooking * {
+  box-sizing: border-box;
+}
+
+.earlyBooking {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 555px;
+  background-image: url(/img/EarlyBooking.png);
+}
+
+.booking-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+}
+
+.booking-info h3 {
+  margin: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.booking-info p {
+  margin: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 403px;
+  background-color: #101A56;
+}
+
+.booking-form .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 303px;
+  height: 455px;
+}
+
+.booking-form p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F9FBFD;
+  margin-top: 50px;
+}
+
+.booking-form input {
+  width: 303px;
+  height: 43px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  background-color: #F9FBFD;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #011C40;
+}
+
+.booking-form label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 130%;
+  color: #F9FBFD;
+}
+
+input#agreeToAll {
+  align-self: start;
+  margin: 0;
+  padding: 0;
+}
+
+.booking-form #submit {
+  margin: 0;
+  padding: 0;
+  width: 303px;
+  height: 43px;
+}
+
+.directionsToUs {
+  height: 547px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.directionsToUs .directions-wrapper {
+
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  height: 306px;
+}
+
+.directionsToUs .direction-map {
+  position: relative;
+  width: 561px;
+}
+
+.direction-map img:last-child {
+  position: absolute;
+  left: 249px;
+  bottom: 69px;
+}
+
+.directionsToUs .direction-info {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.direction-info p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #011C40;
 }
