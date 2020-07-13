@@ -365,9 +365,10 @@ dd {
 
 .earlyBooking {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 555px;
+
   background-image: url(/img/EarlyBooking.png);
 }
 
@@ -377,10 +378,14 @@ dd {
   justify-content: center;
   align-items: flex-start;
   width: 500px;
+  margin-left: 24px;
+  margin-bottom: 10px;
+  ;
 }
 
 .booking-info h3 {
   margin: 0;
+  margin-bottom: 9px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -403,6 +408,7 @@ dd {
   justify-content: center;
   align-items: center;
   width: 403px;
+  margin-right: 26px;
   background-color: #101A56;
 }
 
@@ -421,7 +427,8 @@ dd {
   font-size: 18px;
   line-height: 150%;
   color: #F9FBFD;
-  margin-top: 50px;
+  margin-top: 43px;
+  margin-bottom: 27px;
 }
 
 .booking-form input {
@@ -439,6 +446,8 @@ dd {
 }
 
 .booking-form label {
+  display: inline;
+  vertical-align: middle;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -449,12 +458,15 @@ dd {
 
 input#agreeToAll {
   align-self: start;
+  width: 18px;
+  height: 18px;
   margin: 0;
   padding: 0;
 }
 
 .booking-form #submit {
   margin: 0;
+  margin-top: 30px;
   padding: 0;
   width: 303px;
   height: 43px;
@@ -487,12 +499,16 @@ input#agreeToAll {
 }
 
 .directionsToUs .direction-info {
-  width: 600px;
+  width: 500px;
   display: flex;
   flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: flex-start;
 }
 
-.direction-info p {
+.direction-info>p {
+  margin-top: 75px;
+  margin-bottom: 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -500,3 +516,87 @@ input#agreeToAll {
   line-height: 150%;
   color: #011C40;
 }
+
+.direction-info img {
+  width: 18px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.direction-address *,
+.direction-phone * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px;
+}
+
+.direction-address {
+  margin-top: 30px;
+}
+
+.direction-phone {
+  margin-top: 20px;  
+}
+
+footer {
+  display: flex;
+  height: 138px;
+  background-color: #011C40;
+
+}
+
+.footer-menu {
+  display: flex;
+  width: 1366px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 103px;
+  margin-right: 0px;
+  line-height: 0px;
+}
+
+.footer-nav ul {
+  display: flex;
+  width: 635px;
+  margin: 0px;
+  padding: 0;
+  margin-left: 40px;
+  margin-top: 2px;
+}
+
+.footer-nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 35.5px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #F9FBFD;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.footer-socials {
+  display: flex;;
+  margin-right: 104px;
+}
+
+.footer-socials img {
+  margin: 0;
+  margin-left: 32px;
+}
+

@@ -44,7 +44,7 @@
 		<section class="advantages">
 			<h2>Преимущества</h2>
 			<div class="advantage-item">
-				<img src="./img/Boat.png" width="27px" height="32px">
+				<img src="./img/Boat.png" width="27px" height="32px" alt="лодка">
 				<h3>Небольшой круизный лайнер</h3>
 				<p>
 					Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст
@@ -53,7 +53,7 @@
 				</p>
 			</div>
 			<div class="advantage-item">
-				<img src="./img/Swoosh.png" width="38px" height="21px">
+				<img src="./img/Swoosh.png" width="38px" height="21px" alt="ок">
 				<h3>Система все включено</h3>
 				<p>
 					Все наши круизы работают<br>по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны
@@ -62,7 +62,7 @@
 				</p>
 			</div>
 			<div class="advantage-item">
-				<img src="./img/Glider.png" width="42px" height="15px">
+				<img src="./img/Glider.png" width="42px" height="15px"  alt="катер">
 				<h3>Экскурсионные туры на Zodiac</h3>
 				<p>
 					Экскурсионные туры к берегам Антарктиды совершаются<br>на оборудованных лодках типа Zodiac в
@@ -255,8 +255,9 @@
 					<input type="text" name="firstLastName" id="firstLastName" value="Валерия">
 					<input type="tel" name="phoneNumber" id="phoneNumber" value="89236889975">
 					<input type="email" name="email" id="email" value="grishaewa.lera@gmail.com">
-					<input type="checkbox" name="agreeToAll" id="agreeToAll" checked>
-					<label for="agreeToAll">Я согласен на обработку моих персональных данных</label>
+					<label for="agreeToAll">
+						<input type="checkbox" name="agreeToAll" id="agreeToAll" checked>Я согласен на обработку моих персональных данных
+					</label>
 					<input type="submit" id="submit" value="Оставить заявку">
 				</div>
 			</div>
@@ -270,10 +271,30 @@
 				<div class="direction-info">
 					<p>У вас ещё остались вопросы или сомнения?
 						Приезжайте к нам в офис и мы вам все расскажем.</p>
+					<div class="direction-address"><img src="./img/MapPin.png" alt="Наш адрес"><p>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p></div>
+					<div class="direction-phone"><img src="./img/Phone.png" alt="Контактный телефон"><p>8-800-200-00-00</p></div>
 				</div>
 			</div>
 		</section>
-		<footer></footer>
+		<footer>
+			<div class="footer-menu">
+				
+				<nav class="footer-nav">
+					<div class="footer-logo"><img src="./img/HeaderMountains.png" alt="Горы Антарктики"></div>
+					<ul>
+						<li><a href="#">Преимущества</a></li>
+						<li><a href="#">Направления</a></li>
+						<li><a href="#">Ближайшие круизы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-socials">
+					<img src="./img/FB.png" alt="Фейсбук" class="fb">
+					<img src="./img/IN.png" alt="Инстограмм" class="ig">
+					<img src="./img/TW.png" alt="Твиттер" class="tw">
+				</div>
+			</div>
+		</footer>
 	</div>
 </body>
 
