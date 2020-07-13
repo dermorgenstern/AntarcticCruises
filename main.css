@@ -598,5 +598,6 @@ footer {
 .footer-socials img {
   margin: 0;
   margin-left: 32px;
+  vertical-align: middle;
 }
 
