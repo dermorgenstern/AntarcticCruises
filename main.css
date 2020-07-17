@@ -15,7 +15,7 @@ body {
 .container {
   width: 1366px;
   background-color: #F9FBFD;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .header {
@@ -51,6 +51,7 @@ body {
 
 .header-nav ul {
   display: flex;
+  flex-wrap: wrap;
   width: 615px;
   margin: 0px;
   margin-top: 2px;
@@ -92,7 +93,7 @@ body {
 }
 
 .about {
-  height: 541px;
+  min-height: 541px;
   width: 1160px;
   margin: 0 auto;
   display: flex;
@@ -162,7 +163,7 @@ body {
   flex-direction: column;
   padding: 30px;
   width: 360px;
-  height: 241px;
+  min-height: 241px;
   margin: 20px;
   margin-top: 0px;
   background-color: white;
@@ -234,7 +235,7 @@ body {
   line-height: 150%;
   color: #011C40;
 }
-
+  
 .cruises-list {
   display: flex;
   justify-content: space-between;
@@ -306,19 +307,28 @@ dd {
   height: 40px;
 }
 
-.item-background {
+.cruises-item .item-background  {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-start;
   position: absolute;
-  z-index: 1;
   width: 260px;
   height: 386px;
   top: 0;
   left: 0;
   background-image: url(./img/CruiseAstoria.png);
   background-repeat: no-repeat;
+}
+
+.item-background p {
+  color: #F9FBFD;
+  margin: 0px 0 22px 31px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .cruises-item__02 .item-background {
@@ -347,16 +357,6 @@ dd {
 
 .cruises-item__08 .item-background {
   background-image: url(./img/CruiseMinion.png);
-}
-
-.item-background p {
-  color: #F9FBFD;
-  margin: 0 0 22px 31px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
 }
 
 .earlyBooking * {
@@ -457,10 +457,11 @@ dd {
 }
 
 input#agreeToAll {
-  align-self: start;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   margin: 0;
+  margin-right: 5px;
   padding: 0;
 }
 
@@ -520,7 +521,7 @@ input#agreeToAll {
 .direction-info img {
   width: 18px;
   height: 22px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .direction-address *,
@@ -536,6 +537,11 @@ input#agreeToAll {
 
 .direction-phone {
   margin-top: 20px;  
+}
+
+.direction-phone a {
+  text-decoration: none;
+  color: #011C40;
 }
 
 footer {
@@ -567,6 +573,7 @@ footer {
 
 .footer-nav ul {
   display: flex;
+  flex-wrap: wrap;
   width: 635px;
   margin: 0px;
   padding: 0;
@@ -601,3 +608,78 @@ footer {
   vertical-align: middle;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////// -=let the !force be with you=-  ///////////*/
+/*
+                        _--~~| |~~--_
+                       /     | |   \ \
+                      |      |      | |
+                     |       | |       |
+                     |       |         |
+                    /__----_ | | _----__\
+                   |/_-~~~-_\| |/_-~~~-_\|
+                   //    #  \===/    #  \\
+                  //        |===|        \\
+                 / |________|/~\|________| \
+                /  \        |___|        /  \
+               /   ^\      /| | |\      /^   \
+              /     ^\   /| | | | |\   /^     \
+             /       ^\/| | | | | | |\/^       \
+            <          O|_|_|_|_|_|_|O          >
+             ~\        \   -------   /        /~
+               ~\       ~\ \_____/ /~       /~
+                 ~\       ^-_____-^       /~
+           _________>                   <__________
+/~~~~~~~~~~                                        ~~~~~~~~~~~\
+*/
+
+a:hover,
+input:hover,
+label:hover {
+  cursor: pointer;
+  color: #aae;
+}
+
+input:focus,
+label:focus {
+  outline: 2px solid blue;
+}

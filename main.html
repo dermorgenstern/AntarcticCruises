@@ -39,12 +39,12 @@
 					пингвинов, китов, морских котиков и многое другое.
 				</p>
 			</div>
-			<img src="./img/Pinguines.png" alt="Три динамичных пингвина" sizes="">
+			<img src="./img/Pinguines.png" alt="Три динамичных пингвина">
 		</section>
 		<section class="advantages">
 			<h2>Преимущества</h2>
 			<div class="advantage-item">
-				<img src="./img/Boat.png" width="27px" height="32px" alt="лодка">
+				<img src="./img/Boat.png" width="27" height="32" alt="лодка">
 				<h3>Небольшой круизный лайнер</h3>
 				<p>
 					Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст
@@ -53,7 +53,7 @@
 				</p>
 			</div>
 			<div class="advantage-item">
-				<img src="./img/Swoosh.png" width="38px" height="21px" alt="ок">
+				<img src="./img/Swoosh.png" width="38" height="21" alt="усё-ок">
 				<h3>Система все включено</h3>
 				<p>
 					Все наши круизы работают<br>по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны
@@ -62,7 +62,7 @@
 				</p>
 			</div>
 			<div class="advantage-item">
-				<img src="./img/Glider.png" width="42px" height="15px"  alt="катер">
+				<img src="./img/Glider.png" width="42" height="15" alt="катер">
 				<h3>Экскурсионные туры на Zodiac</h3>
 				<p>
 					Экскурсионные туры к берегам Антарктиды совершаются<br>на оборудованных лодках типа Zodiac в
@@ -91,7 +91,7 @@
 						</div>
 						<input class="item-book" type="button" value="Забронировать">
 					</div>
-					<div class="item-background item__active">
+					<div class="item-background">
 						<p>Круиз "Астория"</p>
 					</div>
 				</div>
@@ -112,7 +112,7 @@
 						</div>
 						<input class="item-book" type="button" value="Забронировать">
 					</div>
-					<div class="item-background item__active">
+					<div class="item-background">
 						<p>Круиз "Элайн"</p>
 					</div>
 				</div>
@@ -133,7 +133,7 @@
 						</div>
 						<input class="item-book" type="button" value="Забронировать">
 					</div>
-					<div class="item-background item__active">
+					<div class="item-background">
 						<p>Круиз "Атлантис"</p>
 					</div>
 				</div>
@@ -175,7 +175,7 @@
 						</div>
 						<input class="item-book" type="button" value="Забронировать">
 					</div>
-					<div class="item-background item__active">
+					<div class="item-background">
 						<p>Круиз "Олимпия"</p>
 					</div>
 				</div>
@@ -250,16 +250,20 @@
 				<p>Забронируйте тур за 3-6 месяцев<br>до даты выезда и сэкономьте до 50%</p>
 			</div>
 			<div class="booking-form">
-				<div class="form-wrapper">
-					<p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
-					<input type="text" name="firstLastName" id="firstLastName" value="Валерия">
-					<input type="tel" name="phoneNumber" id="phoneNumber" value="89236889975">
-					<input type="email" name="email" id="email" value="grishaewa.lera@gmail.com">
-					<label for="agreeToAll">
-						<input type="checkbox" name="agreeToAll" id="agreeToAll" checked>Я согласен на обработку моих персональных данных
-					</label>
-					<input type="submit" id="submit" value="Оставить заявку">
-				</div>
+				<form action="http://sanrio.com/marumofubiyori" method="get" name="formForBooking">
+					<div class="form-wrapper">
+						<p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+						<label for="firstLastName"><input type="text" name="firstLastName" id="firstLastName"
+								placeholder="Валерия Гришаева" required></label>
+						<label for=""><input type="tel" name="phoneNumber" id="phoneNumber" placeholder="89236889975" pattern="8[0-9]{10}" required></label>
+						<label for=""><input type="email" name="email" id="email"
+								placeholder="grishaewa.lera@gmail.com" required></label>
+						<label for="agreeToAll">
+							<input type="checkbox" name="agreeToAll" id="agreeToAll" checked>Я согласен на обработку
+							моих персональных данных</label>
+						<input type="submit" id="submit" value="Оставить заявку">
+					</div>
+				</form>
 			</div>
 		</section>
 		<section class="directionsToUs">
@@ -271,8 +275,12 @@
 				<div class="direction-info">
 					<p>У вас ещё остались вопросы или сомнения?
 						Приезжайте к нам в офис и мы вам все расскажем.</p>
-					<div class="direction-address"><img src="./img/MapPin.png" alt="Наш адрес"><p>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p></div>
-					<div class="direction-phone"><img src="./img/Phone.png" alt="Контактный телефон"><p>8-800-200-00-00</p></div>
+					<div class="direction-address"><img src="./img/MapPin.png" alt="Наш адрес">
+						<p>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+					</div>
+					<div class="direction-phone"><img src="./img/Phone.png" alt="Контактный телефон">
+						<a href="tel:8-800-200-00-00">8-800-200-00-00</a>
+					</div>
 				</div>
 			</div>
 		</section>
