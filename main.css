@@ -369,7 +369,7 @@ dd {
   align-items: center;
   height: 555px;
 
-  background-image: url(/img/EarlyBooking.png);
+  background-image: url(./img/EarlyBooking.png);
 }
 
 .booking-info {
