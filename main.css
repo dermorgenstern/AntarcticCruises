@@ -443,7 +443,9 @@ dd {
   margin-bottom: 27px;
 }
 
-.booking-form input {
+.booking-form input,
+.booking-form button
+ {
   width: 303px;
   height: 43px;
   margin-bottom: 21px;
