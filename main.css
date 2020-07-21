@@ -15,7 +15,7 @@ body {
 .container {
   width: 1366px;
   background-color: #F9FBFD;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .header {
