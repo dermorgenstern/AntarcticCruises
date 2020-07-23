@@ -616,21 +616,66 @@ footer {
   margin-right: 104px;
 }
 
-.footer-socials img {
+.footer-socials svg {
   margin: 0;
   margin-left: 32px;
   vertical-align: middle;
 }
 
 a:hover,
-a>img,
 input:hover,
+button:hover,
 label:hover {
   cursor: pointer;
-  color: #aae;
+  color: #aaa;
+}
+
+svg:hover path {
+  cursor: pointer;
+  fill: #aaa;
 }
 
 input:focus,
 label:focus {
   outline: 2px solid blue;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+            ,.  ,.
+            ||  ||
+           ,''--''.
+          : (.)(.) :
+         ,'        `.
+         :          :
+         :          :
+         `._m____m_,' 
+*/
